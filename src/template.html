@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="使用 D3.js 呈現 2024 年臺北市 12 個行政區的人口密度，依密度由高至低排序。">
+  <title>2024 年臺北市各行政區人口密度</title>
+  {{STYLES}}
+</head>
+<body>
+  <main class="report">
+    <header class="report-header">
+      <p class="eyebrow">臺北市 <span aria-hidden="true">／</span> 2024 年底</p>
+      <h1>各行政區人口密度比較</h1>
+      <p class="insight" id="insight">以每平方公里人口數，比較 12 個行政區的人口集中程度。</p>
+    </header>
+
+    <figure aria-labelledby="chart-caption">
+      <figcaption id="chart-caption">12 個行政區，依人口密度由高至低排列</figcaption>
+      <div id="chart" class="chart-container"></div>
+      <p id="chart-error" class="error" role="alert" hidden></p>
+      <noscript>
+        <p>請啟用 JavaScript 以顯示 D3.js 圖表。原始數值如下：</p>
+        {{FALLBACK_TABLE}}
+      </noscript>
+    </figure>
+
+    <footer class="notes">
+      <p><strong>資料來源</strong>　內政部戶政司，<a href="https://data.gov.tw/dataset/8410">各鄉鎮市區人口密度</a>，民國 113 年（2024 年）。</p>
+      <p>人口密度＝年底人口數 ÷ 行政區土地面積；圖中採官方公布整數值。行政區包含不同土地使用，數值不等同住宅區的實際居住擁擠程度。</p>
+    </footer>
+  </main>
+
+  <script id="density-data" type="text/csv">{{DATA}}</script>
+  {{D3}}
+  {{CHART}}
+</body>
+</html>

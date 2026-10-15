@@ -1,0 +1,86 @@
+[
+  {
+    "year": 2024,
+    "district": "大安區",
+    "population": 289908,
+    "area_km2": 11.3614,
+    "density_people_per_km2": 25517
+  },
+  {
+    "year": 2024,
+    "district": "大同區",
+    "population": 118992,
+    "area_km2": 5.6815,
+    "density_people_per_km2": 20944
+  },
+  {
+    "year": 2024,
+    "district": "松山區",
+    "population": 191826,
+    "area_km2": 9.2878,
+    "density_people_per_km2": 20654
+  },
+  {
+    "year": 2024,
+    "district": "中正區",
+    "population": 148375,
+    "area_km2": 7.6071,
+    "density_people_per_km2": 19505
+  },
+  {
+    "year": 2024,
+    "district": "萬華區",
+    "population": 171915,
+    "area_km2": 8.8522,
+    "density_people_per_km2": 19421
+  },
+  {
+    "year": 2024,
+    "district": "信義區",
+    "population": 205067,
+    "area_km2": 11.2077,
+    "density_people_per_km2": 18297
+  },
+  {
+    "year": 2024,
+    "district": "中山區",
+    "population": 215245,
+    "area_km2": 13.6821,
+    "density_people_per_km2": 15732
+  },
+  {
+    "year": 2024,
+    "district": "內湖區",
+    "population": 273748,
+    "area_km2": 31.5787,
+    "density_people_per_km2": 8669
+  },
+  {
+    "year": 2024,
+    "district": "文山區",
+    "population": 258333,
+    "area_km2": 31.509,
+    "density_people_per_km2": 8199
+  },
+  {
+    "year": 2024,
+    "district": "南港區",
+    "population": 112643,
+    "area_km2": 21.8424,
+    "density_people_per_km2": 5157
+  },
+  {
+    "year": 2024,
+    "district": "士林區",
+    "population": 264194,
+    "area_km2": 62.3682,
+    "density_people_per_km2": 4236
+  },
+  {
+    "year": 2024,
+    "district": "北投區",
+    "population": 240623,
+    "area_km2": 56.8216,
+    "density_people_per_km2": 4235
+  }
+]

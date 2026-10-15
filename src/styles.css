@@ -1,0 +1,67 @@
+{{FONT_FACE}}
+
+:root {
+  color-scheme: light;
+  --ink: #172c3c;
+  --secondary: #526574;
+  --grid: #e2e8ed;
+  --bar: #779cb6;
+  --highlight: #164b70;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: "Taipei Chart", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.report { max-width: 1040px; margin: 48px auto 36px; padding: 0 40px; }
+.report-header { margin-bottom: 32px; }
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+.eyebrow span { margin: 0 8px; color: #8c9caa; }
+h1 { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.4; letter-spacing: .01em; }
+.insight { margin: 14px 0 0; font-size: 17px; line-height: 1.9; color: var(--secondary); }
+.insight strong { color: var(--highlight); font-weight: 700; }
+figure { margin: 0; }
+figcaption { margin: 0 0 12px; font-size: 13px; color: var(--secondary); }
+.chart-container { width: 100%; }
+.density-chart { display: block; width: 100%; height: auto; overflow: visible; }
+.notes { margin-top: 22px; border-top: 1px solid var(--grid); padding-top: 16px; }
+.notes p { margin: 0 0 6px; font-size: 12px; line-height: 1.85; color: var(--secondary); }
+.notes strong { font-weight: 600; color: var(--ink); }
+a { color: var(--highlight); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--highlight); outline-offset: 4px; }
+.error { padding: 12px; color: #902726; border: 1px solid #c99191; line-height: 1.6; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px; text-align: right; border-bottom: 1px solid var(--grid); }
+th:first-child, td:first-child { text-align: left; }
+
+@media (max-width: 620px) {
+  .report { margin: 28px auto 24px; padding: 0 18px; }
+  .report-header { margin-bottom: 26px; }
+  h1 { font-size: 27px; }
+  .insight { font-size: 15px; margin-top: 12px; }
+  .eyebrow { font-size: 12px; }
+  .notes { margin-top: 16px; }
+}
+
+@page { size: A4 portrait; margin: 12mm; }
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .report { max-width: none; margin: 0; padding: 0; }
+  .report-header { margin-bottom: 18px; }
+  h1 { font-size: 26px; }
+  .insight { font-size: 14px; }
+  .notes { margin-top: 12px; padding-top: 12px; }
+  .notes p { font-size: 11px; }
+  figure { break-inside: avoid; }
+  a { text-decoration: none; }
+}
